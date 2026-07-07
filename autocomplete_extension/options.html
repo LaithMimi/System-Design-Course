@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AI Autocomplete — Options</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 460px; margin: 40px auto; padding: 0 16px; color: #1d1747; }
+    h1 { font-size: 1.2rem; }
+    p { font-size: 0.9rem; color: #5d5880; }
+    label { display: block; font-weight: 600; font-size: 0.9rem; margin: 18px 0 6px; }
+    input { width: 100%; padding: 10px 12px; font-size: 0.9rem; border: 1.5px solid #1d1747; border-radius: 8px; box-sizing: border-box; }
+    button { margin-top: 14px; padding: 10px 22px; font-weight: 700; font-size: 0.9rem; color: #fff; background: #4438ca; border: none; border-radius: 8px; cursor: pointer; }
+    #status { margin-top: 12px; font-size: 0.85rem; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <h1>AI Autocomplete settings</h1>
+  <p>Paste your OpenRouter API key. It's stored only in this browser's extension storage and never leaves your machine except in requests to OpenRouter.</p>
+  <label for="key">OpenRouter API key</label>
+  <input id="key" type="password" placeholder="sk-or-v1-..." autocomplete="off" />
+  <button id="save">Save key</button>
+  <p id="status"></p>
+  <script src="options.js"></script>
+</body>
+</html>
